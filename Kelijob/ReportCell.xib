@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ReportCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReportCell" rowHeight="143" id="KGk-i7-Jjw" customClass="ReportCell" customModule="Kelijob" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PB0-1j-wx3">
+                        <rect key="frame" x="8" y="16" width="286" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="d4n-82-Rvi"/>
+                            <constraint firstAttribute="width" constant="286" id="yd4-d3-NbF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkc-Rr-zdW">
+                        <rect key="frame" x="8" y="32" width="304" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="99" id="qSY-1X-4fh"/>
+                            <constraint firstAttribute="width" constant="304" id="wTj-A4-lbT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUT-ep-O7a">
+                        <rect key="frame" x="204" y="14" width="98" height="101"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rb-8V-Aw5">
+                        <rect key="frame" x="8" y="1" width="188" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="RMJ-H7-4GP"/>
+                            <constraint firstAttribute="width" constant="188" id="u5x-jh-2L5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xkc-Rr-zdW" firstAttribute="leading" secondItem="2rb-8V-Aw5" secondAttribute="leading" id="9Uw-53-TfK"/>
+                    <constraint firstItem="PB0-1j-wx3" firstAttribute="top" secondItem="2rb-8V-Aw5" secondAttribute="bottom" constant="-6" id="Cz0-e8-Y7F"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xkc-Rr-zdW" secondAttribute="trailing" id="NXP-tP-ZUN"/>
+                    <constraint firstItem="2rb-8V-Aw5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-7" id="RwL-q8-uEf"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="2rb-8V-Aw5" secondAttribute="leading" id="VVq-X8-FLc"/>
+                    <constraint firstItem="PB0-1j-wx3" firstAttribute="leading" secondItem="2rb-8V-Aw5" secondAttribute="leading" id="Z5t-G5-wS0"/>
+                    <constraint firstItem="PB0-1j-wx3" firstAttribute="leading" secondItem="2rb-8V-Aw5" secondAttribute="trailing" constant="-188" id="bdB-ws-zvw"/>
+                    <constraint firstItem="xkc-Rr-zdW" firstAttribute="top" secondItem="PB0-1j-wx3" secondAttribute="bottom" id="dQR-Aj-0Na"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="PB0-1j-wx3" id="Pjo-bV-wrp"/>
+                <outlet property="noLabel" destination="2rb-8V-Aw5" id="Ov4-HI-Gd5"/>
+                <outlet property="reportImageView" destination="yUT-ep-O7a" id="Xer-lp-sk5"/>
+                <outlet property="reportLabel" destination="xkc-Rr-zdW" id="gA8-t2-Uc4"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="-29.5"/>
+        </tableViewCell>
+    </objects>
+</document>

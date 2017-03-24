@@ -1,0 +1,31 @@
+# Mac
+.DS_Store
+
+# Xcode
+Build
+Kelijob.xcodeproj/project.xcworkspace/xcuserdata
+Build/*
+build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+*.timestamp
+DerivedData/*
+*.d
+*.o
+*.pcim
+Kelijob.xcworkspace/xcuserdata/*
+Pods/Pods.xcodeproj/xcuserdata/*
+#CocoaPod
+Pods/*
+*.plist

@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A8BC4D9817661E1C8D2F73B /* Pods_Kelijob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF5B20DCF8B8F2FF8420F79 /* Pods_Kelijob.framework */; };
+		6B28C695CAC7D29664CCC914 /* Pods_KelijobTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6BA902D7782E9F2258D978 /* Pods_KelijobTests.framework */; };
+		97010B3E1E494D180096788C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97010B3D1E494D180096788C /* NotificationCenter.framework */; };
+		97010B451E4BFA6D0096788C /* EULAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97010B431E4BFA6D0096788C /* EULAViewController.swift */; };
+		97010B461E4BFA6D0096788C /* EULAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97010B441E4BFA6D0096788C /* EULAViewController.xib */; };
+		9704BB531E03CE090021F36B /* KeliConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704BB521E03CE090021F36B /* KeliConnection.swift */; };
+		9704BB5C1E03F4E90021F36B /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704BB5B1E03F4E90021F36B /* TimelineTableViewController.swift */; };
+		9704BB601E04D8CF0021F36B /* FriendsGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704BB5F1E04D8CF0021F36B /* FriendsGroupTableViewController.swift */; };
+		9704BB691E04DE160021F36B /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704BB671E04DE160021F36B /* TimelineCell.swift */; };
+		9704BB6A1E04DE160021F36B /* TimelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9704BB681E04DE160021F36B /* TimelineCell.xib */; };
+		9712CBF31E1CE9F000A8C7C5 /* local_domains.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9712CBF21E1CE9F000A8C7C5 /* local_domains.plist */; };
+		9712CBF51E1CEAE300A8C7C5 /* DomainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712CBF41E1CEAE300A8C7C5 /* DomainManager.swift */; };
+		9712CBF71E1FB2C000A8C7C5 /* error_code.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9712CBF61E1FB2C000A8C7C5 /* error_code.plist */; };
+		9712CBF91E20DE5000A8C7C5 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712CBF81E20DE5000A8C7C5 /* ErrorManager.swift */; };
+		9712CBFB1E24D44300A8C7C5 /* KeliConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712CBFA1E24D44300A8C7C5 /* KeliConfirmViewController.swift */; };
+		9712CBFD1E260A0700A8C7C5 /* ConstValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712CBFC1E260A0700A8C7C5 /* ConstValue.swift */; };
+		9712CC031E276FFF00A8C7C5 /* FriendSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9712CC021E276FFF00A8C7C5 /* FriendSearchViewController.swift */; };
+		972A61021E371B670068D0C4 /* FriendsInGroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A61011E371B670068D0C4 /* FriendsInGroupTableViewController.swift */; };
+		9743B7E41E43191E002FE541 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9743B7E31E43191E002FE541 /* images.xcassets */; };
+		975C37F31E07D69D005F9B35 /* SelectFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975C37F21E07D69D005F9B35 /* SelectFriendsTableViewController.swift */; };
+		975C37F51E08B5E2005F9B35 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975C37F41E08B5E2005F9B35 /* Report.swift */; };
+		9788DAE01E2DE38100024EED /* ApplyFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9788DADE1E2DE38100024EED /* ApplyFriendCell.swift */; };
+		9788DAE11E2DE38100024EED /* ApplyFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9788DADF1E2DE38100024EED /* ApplyFriendCell.xib */; };
+		978989561E4C0BBB009D2C19 /* AuthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978989551E4C0BBB009D2C19 /* AuthTableViewController.swift */; };
+		978989591E4C168C009D2C19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978989571E4C168C009D2C19 /* LoginViewController.swift */; };
+		9789895A1E4C168C009D2C19 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 978989581E4C168C009D2C19 /* LoginViewController.xib */; };
+		979D4F3F1E03BC5D004446D1 /* CreateJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979D4F3E1E03BC5D004446D1 /* CreateJobViewController.swift */; };
+		97B77E0D1E02283F00A460ED /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B77E0B1E02283F00A460ED /* Realm.framework */; };
+		97B77E0E1E02283F00A460ED /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B77E0C1E02283F00A460ED /* RealmSwift.framework */; };
+		97C5C2AE1E4829D4007E4F3C /* remote_release_domains.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97C5C2AC1E4829D4007E4F3C /* remote_release_domains.plist */; };
+		97C5C2AF1E4829D4007E4F3C /* remote_stg_domains.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97C5C2AD1E4829D4007E4F3C /* remote_stg_domains.plist */; };
+		97D1C88F1DFFAE4800DE0352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D1C88E1DFFAE4800DE0352 /* AppDelegate.swift */; };
+		97D1C8961DFFAE4800DE0352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D1C8941DFFAE4800DE0352 /* Main.storyboard */; };
+		97D1C8981DFFAE4800DE0352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D1C8971DFFAE4800DE0352 /* Assets.xcassets */; };
+		97D1C89B1DFFAE4800DE0352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D1C8991DFFAE4800DE0352 /* LaunchScreen.storyboard */; };
+		97D1C8A61DFFAE4800DE0352 /* KelijobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D1C8A51DFFAE4800DE0352 /* KelijobTests.swift */; };
+		97D1C8B11DFFAE9700DE0352 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D1C8B01DFFAE9700DE0352 /* Job.swift */; };
+		97D1C8B61DFFBABC00DE0352 /* ManipulateUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D1C8B51DFFBABC00DE0352 /* ManipulateUserDefaults.swift */; };
+		97D1C8B81DFFDF0C00DE0352 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D1C8B71DFFDF0C00DE0352 /* User.swift */; };
+		97D1C8BA1DFFE18900DE0352 /* Keli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D1C8B91DFFE18900DE0352 /* Keli.swift */; };
+		97D29ABB1E3C5ECA00A948B5 /* Contact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97D29ABA1E3C5ECA00A948B5 /* Contact@2x.png */; };
+		97D29ABD1E3C5ED100A948B5 /* Smartphone_Outgoing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97D29ABC1E3C5ED100A948B5 /* Smartphone_Outgoing@2x.png */; };
+		97D29ABF1E3C5ED900A948B5 /* World_Times@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97D29ABE1E3C5ED900A948B5 /* World_Times@2x.png */; };
+		97D29AC31E3F2DD800A948B5 /* remote_alt_domains.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97D29AC21E3F2DD800A948B5 /* remote_alt_domains.plist */; };
+		97D3626A1E30B6E3004B02AE /* AddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D362681E30B6E3004B02AE /* AddCell.swift */; };
+		97D3626B1E30B6E3004B02AE /* AddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D362691E30B6E3004B02AE /* AddCell.xib */; };
+		97D3626D1E30CCCE004B02AE /* GroupDefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D3626C1E30CCCE004B02AE /* GroupDefinitionViewController.swift */; };
+		97D362711E31BE4C004B02AE /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D362701E31BE4C004B02AE /* CreateGroupViewController.swift */; };
+		97D362741E31D719004B02AE /* AddFrGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D362721E31D719004B02AE /* AddFrGroupCell.swift */; };
+		97D362751E31D719004B02AE /* AddFrGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D362731E31D719004B02AE /* AddFrGroupCell.xib */; };
+		97D362771E31EF86004B02AE /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D362761E31EF86004B02AE /* Group.swift */; };
+		97D362791E3350B7004B02AE /* UIBorderedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D362781E3350B7004B02AE /* UIBorderedTextView.swift */; };
+		97DD10DD1E4423E000075F90 /* launch_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 97DD10DC1E4423E000075F90 /* launch_screen.png */; };
+		97DD10DF1E44290A00075F90 /* launch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97DD10DE1E44290A00075F90 /* launch.xcassets */; };
+		97DD10E11E4446B300075F90 /* 85x85.png in Resources */ = {isa = PBXBuildFile; fileRef = 97DD10E01E4446B300075F90 /* 85x85.png */; };
+		97DD10E41E445B4500075F90 /* ApplyFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DD10E21E445B4500075F90 /* ApplyFriendsCell.swift */; };
+		97DD10E51E445B4500075F90 /* ApplyFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DD10E31E445B4500075F90 /* ApplyFriendsCell.xib */; };
+		97EDFFE31E09F7D6003592E7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EDFFE21E09F7D6003592E7 /* ProfileViewController.swift */; };
+		97EDFFE71E0A1F9A003592E7 /* CreateReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EDFFE61E0A1F9A003592E7 /* CreateReportViewController.swift */; };
+		97EDFFEC1E0B7B3A003592E7 /* ReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EDFFEA1E0B7B3A003592E7 /* ReportCell.swift */; };
+		97EDFFED1E0B7B3A003592E7 /* ReportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97EDFFEB1E0B7B3A003592E7 /* ReportCell.xib */; };
+		97EDFFEF1E0B7C20003592E7 /* ReportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EDFFEE1E0B7C20003592E7 /* ReportTableViewController.swift */; };
+		97EDFFF11E0BC86F003592E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97EDFFF01E0BC86F003592E7 /* GoogleService-Info.plist */; };
+		97EDFFF41E0E11B8003592E7 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EDFFF31E0E11B8003592E7 /* LoginManager.swift */; };
+		97F8148F1E358BFC0024C668 /* ProfileReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F8148E1E358BFC0024C668 /* ProfileReportViewController.swift */; };
+		97F814911E35BB430024C668 /* CreateProfileReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F814901E35BB430024C668 /* CreateProfileReportViewController.swift */; };
+		97F814931E35E5030024C668 /* local_error_domains.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97F814921E35E5030024C668 /* local_error_domains.plist */; };
+		97F814951E35EB730024C668 /* AlertControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F814941E35EB730024C668 /* AlertControllerManager.swift */; };
+		97FF5FD91E052C5900BD4896 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5FD81E052C5900BD4896 /* RealmManager.swift */; };
+		97FF5FDC1E054FD300BD4896 /* FriendsGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5FDA1E054FD300BD4896 /* FriendsGroupCell.swift */; };
+		97FF5FDD1E054FD300BD4896 /* FriendsGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97FF5FDB1E054FD300BD4896 /* FriendsGroupCell.xib */; };
+		97FF5FDF1E0619E800BD4896 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5FDE1E0619E800BD4896 /* FriendDetailViewController.swift */; };
+		97FF5FE31E07C60A00BD4896 /* CreateKeliViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF5FE21E07C60A00BD4896 /* CreateKeliViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97D1C8A21DFFAE4800DE0352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97D1C8831DFFAE4800DE0352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97D1C88A1DFFAE4800DE0352;
+			remoteInfo = Kelijob;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DFD1198C9CF3506A5D483C3 /* Pods-KelijobTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KelijobTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KelijobTests/Pods-KelijobTests.release.xcconfig"; sourceTree = "<group>"; };
+		47D1B6DA8E61435CCF20DDEF /* Pods-Kelijob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelijob.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kelijob/Pods-Kelijob.release.xcconfig"; sourceTree = "<group>"; };
+		4A6BA902D7782E9F2258D978 /* Pods_KelijobTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KelijobTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97010B3D1E494D180096788C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		97010B431E4BFA6D0096788C /* EULAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EULAViewController.swift; path = ../EULAViewController.swift; sourceTree = "<group>"; };
+		97010B441E4BFA6D0096788C /* EULAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EULAViewController.xib; path = ../EULAViewController.xib; sourceTree = "<group>"; };
+		9704BB521E03CE090021F36B /* KeliConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeliConnection.swift; sourceTree = "<group>"; };
+		9704BB5B1E03F4E90021F36B /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		9704BB5F1E04D8CF0021F36B /* FriendsGroupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsGroupTableViewController.swift; sourceTree = "<group>"; };
+		9704BB671E04DE160021F36B /* TimelineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
+		9704BB681E04DE160021F36B /* TimelineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineCell.xib; sourceTree = "<group>"; };
+		9712CBF21E1CE9F000A8C7C5 /* local_domains.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = local_domains.plist; sourceTree = "<group>"; };
+		9712CBF41E1CEAE300A8C7C5 /* DomainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainManager.swift; sourceTree = "<group>"; };
+		9712CBF61E1FB2C000A8C7C5 /* error_code.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = error_code.plist; sourceTree = "<group>"; };
+		9712CBF81E20DE5000A8C7C5 /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		9712CBFA1E24D44300A8C7C5 /* KeliConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeliConfirmViewController.swift; sourceTree = "<group>"; };
+		9712CBFC1E260A0700A8C7C5 /* ConstValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstValue.swift; sourceTree = "<group>"; };
+		9712CC021E276FFF00A8C7C5 /* FriendSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchViewController.swift; sourceTree = "<group>"; };
+		972A61011E371B670068D0C4 /* FriendsInGroupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsInGroupTableViewController.swift; sourceTree = "<group>"; };
+		9743B7E31E43191E002FE541 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		975C37F21E07D69D005F9B35 /* SelectFriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectFriendsTableViewController.swift; sourceTree = "<group>"; };
+		975C37F41E08B5E2005F9B35 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		9788DADE1E2DE38100024EED /* ApplyFriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyFriendCell.swift; sourceTree = "<group>"; };
+		9788DADF1E2DE38100024EED /* ApplyFriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyFriendCell.xib; sourceTree = "<group>"; };
+		978989551E4C0BBB009D2C19 /* AuthTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTableViewController.swift; sourceTree = "<group>"; };
+		978989571E4C168C009D2C19 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		978989581E4C168C009D2C19 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		979D4F3E1E03BC5D004446D1 /* CreateJobViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateJobViewController.swift; sourceTree = "<group>"; };
+		97B77E0B1E02283F00A460ED /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
+		97B77E0C1E02283F00A460ED /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		97C5C2AC1E4829D4007E4F3C /* remote_release_domains.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_release_domains.plist; sourceTree = "<group>"; };
+		97C5C2AD1E4829D4007E4F3C /* remote_stg_domains.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_stg_domains.plist; sourceTree = "<group>"; };
+		97D1C88B1DFFAE4800DE0352 /* Kelijob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kelijob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D1C88E1DFFAE4800DE0352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97D1C8951DFFAE4800DE0352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97D1C8971DFFAE4800DE0352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97D1C89A1DFFAE4800DE0352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97D1C89C1DFFAE4800DE0352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97D1C8A11DFFAE4800DE0352 /* KelijobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KelijobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D1C8A51DFFAE4800DE0352 /* KelijobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelijobTests.swift; sourceTree = "<group>"; };
+		97D1C8A71DFFAE4800DE0352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97D1C8B01DFFAE9700DE0352 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		97D1C8B51DFFBABC00DE0352 /* ManipulateUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManipulateUserDefaults.swift; sourceTree = "<group>"; };
+		97D1C8B71DFFDF0C00DE0352 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		97D1C8B91DFFE18900DE0352 /* Keli.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keli.swift; sourceTree = "<group>"; };
+		97D29AB81E3C349A00A948B5 /* Kelijob-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kelijob-Bridging-Header.h"; sourceTree = "<group>"; };
+		97D29ABA1E3C5ECA00A948B5 /* Contact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Contact@2x.png"; path = "Resorces/Contact@2x.png"; sourceTree = "<group>"; };
+		97D29ABC1E3C5ED100A948B5 /* Smartphone_Outgoing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Smartphone_Outgoing@2x.png"; path = "Resorces/Smartphone_Outgoing@2x.png"; sourceTree = "<group>"; };
+		97D29ABE1E3C5ED900A948B5 /* World_Times@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "World_Times@2x.png"; path = "Resorces/World_Times@2x.png"; sourceTree = "<group>"; };
+		97D29AC21E3F2DD800A948B5 /* remote_alt_domains.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_alt_domains.plist; sourceTree = "<group>"; };
+		97D362681E30B6E3004B02AE /* AddCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCell.swift; sourceTree = "<group>"; };
+		97D362691E30B6E3004B02AE /* AddCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCell.xib; sourceTree = "<group>"; };
+		97D3626C1E30CCCE004B02AE /* GroupDefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDefinitionViewController.swift; sourceTree = "<group>"; };
+		97D362701E31BE4C004B02AE /* CreateGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		97D362721E31D719004B02AE /* AddFrGroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFrGroupCell.swift; sourceTree = "<group>"; };
+		97D362731E31D719004B02AE /* AddFrGroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFrGroupCell.xib; sourceTree = "<group>"; };
+		97D362761E31EF86004B02AE /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		97D362781E3350B7004B02AE /* UIBorderedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBorderedTextView.swift; sourceTree = "<group>"; };
+		97DD10DC1E4423E000075F90 /* launch_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_screen.png; path = Resorces/launch_screen.png; sourceTree = "<group>"; };
+		97DD10DE1E44290A00075F90 /* launch.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = launch.xcassets; sourceTree = "<group>"; };
+		97DD10E01E4446B300075F90 /* 85x85.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 85x85.png; path = Resorces/85x85.png; sourceTree = "<group>"; };
+		97DD10E21E445B4500075F90 /* ApplyFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyFriendsCell.swift; sourceTree = "<group>"; };
+		97DD10E31E445B4500075F90 /* ApplyFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyFriendsCell.xib; sourceTree = "<group>"; };
+		97EDFFE21E09F7D6003592E7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		97EDFFE61E0A1F9A003592E7 /* CreateReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateReportViewController.swift; sourceTree = "<group>"; };
+		97EDFFEA1E0B7B3A003592E7 /* ReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCell.swift; sourceTree = "<group>"; };
+		97EDFFEB1E0B7B3A003592E7 /* ReportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportCell.xib; sourceTree = "<group>"; };
+		97EDFFEE1E0B7C20003592E7 /* ReportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewController.swift; sourceTree = "<group>"; };
+		97EDFFF01E0BC86F003592E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		97EDFFF21E0BCF81003592E7 /* Kelijob.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kelijob.entitlements; sourceTree = "<group>"; };
+		97EDFFF31E0E11B8003592E7 /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		97F8148E1E358BFC0024C668 /* ProfileReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileReportViewController.swift; sourceTree = "<group>"; };
+		97F814901E35BB430024C668 /* CreateProfileReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReportViewController.swift; sourceTree = "<group>"; };
+		97F814921E35E5030024C668 /* local_error_domains.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = local_error_domains.plist; sourceTree = "<group>"; };
+		97F814941E35EB730024C668 /* AlertControllerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerManager.swift; sourceTree = "<group>"; };
+		97FF5FD81E052C5900BD4896 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		97FF5FDA1E054FD300BD4896 /* FriendsGroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsGroupCell.swift; sourceTree = "<group>"; };
+		97FF5FDB1E054FD300BD4896 /* FriendsGroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsGroupCell.xib; sourceTree = "<group>"; };
+		97FF5FDE1E0619E800BD4896 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		97FF5FE21E07C60A00BD4896 /* CreateKeliViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateKeliViewController.swift; sourceTree = "<group>"; };
+		BEF5B20DCF8B8F2FF8420F79 /* Pods_Kelijob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kelijob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C782D5F9E3D6E0CBBFB4152D /* Pods-KelijobTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KelijobTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KelijobTests/Pods-KelijobTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2378EB51E264064CB18FD86 /* Pods-Kelijob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelijob.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kelijob/Pods-Kelijob.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97D1C8881DFFAE4800DE0352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97010B3E1E494D180096788C /* NotificationCenter.framework in Frameworks */,
+				97B77E0D1E02283F00A460ED /* Realm.framework in Frameworks */,
+				97B77E0E1E02283F00A460ED /* RealmSwift.framework in Frameworks */,
+				3A8BC4D9817661E1C8D2F73B /* Pods_Kelijob.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97D1C89E1DFFAE4800DE0352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B28C695CAC7D29664CCC914 /* Pods_KelijobTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		144B9FF42FA5494B59B8618D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2378EB51E264064CB18FD86 /* Pods-Kelijob.debug.xcconfig */,
+				47D1B6DA8E61435CCF20DDEF /* Pods-Kelijob.release.xcconfig */,
+				C782D5F9E3D6E0CBBFB4152D /* Pods-KelijobTests.debug.xcconfig */,
+				2DFD1198C9CF3506A5D483C3 /* Pods-KelijobTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9704BB561E03EE920021F36B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97D1C8941DFFAE4800DE0352 /* Main.storyboard */,
+				97D1C8991DFFAE4800DE0352 /* LaunchScreen.storyboard */,
+				9788DADE1E2DE38100024EED /* ApplyFriendCell.swift */,
+				9788DADF1E2DE38100024EED /* ApplyFriendCell.xib */,
+				97DD10E21E445B4500075F90 /* ApplyFriendsCell.swift */,
+				97DD10E31E445B4500075F90 /* ApplyFriendsCell.xib */,
+				97D362721E31D719004B02AE /* AddFrGroupCell.swift */,
+				97D362731E31D719004B02AE /* AddFrGroupCell.xib */,
+				9704BB671E04DE160021F36B /* TimelineCell.swift */,
+				9704BB681E04DE160021F36B /* TimelineCell.xib */,
+				97FF5FDA1E054FD300BD4896 /* FriendsGroupCell.swift */,
+				97FF5FDB1E054FD300BD4896 /* FriendsGroupCell.xib */,
+				97D362681E30B6E3004B02AE /* AddCell.swift */,
+				97D362691E30B6E3004B02AE /* AddCell.xib */,
+				97EDFFEA1E0B7B3A003592E7 /* ReportCell.swift */,
+				97EDFFEB1E0B7B3A003592E7 /* ReportCell.xib */,
+				97D362781E3350B7004B02AE /* UIBorderedTextView.swift */,
+				97F814941E35EB730024C668 /* AlertControllerManager.swift */,
+				97010B431E4BFA6D0096788C /* EULAViewController.swift */,
+				97010B441E4BFA6D0096788C /* EULAViewController.xib */,
+				978989551E4C0BBB009D2C19 /* AuthTableViewController.swift */,
+				978989571E4C168C009D2C19 /* LoginViewController.swift */,
+				978989581E4C168C009D2C19 /* LoginViewController.xib */,
+				97D29AB91E3C5EB200A948B5 /* Images */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		97D1C8821DFFAE4800DE0352 = {
+			isa = PBXGroup;
+			children = (
+				9743B7E31E43191E002FE541 /* images.xcassets */,
+				97DD10DE1E44290A00075F90 /* launch.xcassets */,
+				97D29AB81E3C349A00A948B5 /* Kelijob-Bridging-Header.h */,
+				97D1C88D1DFFAE4800DE0352 /* Kelijob */,
+				97D1C8A41DFFAE4800DE0352 /* KelijobTests */,
+				97D1C88C1DFFAE4800DE0352 /* Products */,
+				144B9FF42FA5494B59B8618D /* Pods */,
+				B9C34D862162B0CF5C620D8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		97D1C88C1DFFAE4800DE0352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97D1C88B1DFFAE4800DE0352 /* Kelijob.app */,
+				97D1C8A11DFFAE4800DE0352 /* KelijobTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97D1C88D1DFFAE4800DE0352 /* Kelijob */ = {
+			isa = PBXGroup;
+			children = (
+				97EDFFF21E0BCF81003592E7 /* Kelijob.entitlements */,
+				97D1C88E1DFFAE4800DE0352 /* AppDelegate.swift */,
+				9704BB5B1E03F4E90021F36B /* TimelineTableViewController.swift */,
+				979D4F3E1E03BC5D004446D1 /* CreateJobViewController.swift */,
+				975C37F21E07D69D005F9B35 /* SelectFriendsTableViewController.swift */,
+				9712CBFA1E24D44300A8C7C5 /* KeliConfirmViewController.swift */,
+				97EDFFE61E0A1F9A003592E7 /* CreateReportViewController.swift */,
+				9704BB5F1E04D8CF0021F36B /* FriendsGroupTableViewController.swift */,
+				972A61011E371B670068D0C4 /* FriendsInGroupTableViewController.swift */,
+				9712CC021E276FFF00A8C7C5 /* FriendSearchViewController.swift */,
+				97FF5FDE1E0619E800BD4896 /* FriendDetailViewController.swift */,
+				97D3626C1E30CCCE004B02AE /* GroupDefinitionViewController.swift */,
+				97D362701E31BE4C004B02AE /* CreateGroupViewController.swift */,
+				97FF5FE21E07C60A00BD4896 /* CreateKeliViewController.swift */,
+				97EDFFE21E09F7D6003592E7 /* ProfileViewController.swift */,
+				97EDFFEE1E0B7C20003592E7 /* ReportTableViewController.swift */,
+				97F8148E1E358BFC0024C668 /* ProfileReportViewController.swift */,
+				97F814901E35BB430024C668 /* CreateProfileReportViewController.swift */,
+				9704BB561E03EE920021F36B /* View */,
+				97D1C8971DFFAE4800DE0352 /* Assets.xcassets */,
+				97D1C89C1DFFAE4800DE0352 /* Info.plist */,
+				97EDFFF01E0BC86F003592E7 /* GoogleService-Info.plist */,
+				9712CBF21E1CE9F000A8C7C5 /* local_domains.plist */,
+				97C5C2AC1E4829D4007E4F3C /* remote_release_domains.plist */,
+				97C5C2AD1E4829D4007E4F3C /* remote_stg_domains.plist */,
+				97D29AC21E3F2DD800A948B5 /* remote_alt_domains.plist */,
+				97F814921E35E5030024C668 /* local_error_domains.plist */,
+				9712CBF61E1FB2C000A8C7C5 /* error_code.plist */,
+				97D1C8B21DFFAEAA00DE0352 /* Model */,
+			);
+			path = Kelijob;
+			sourceTree = "<group>";
+		};
+		97D1C8A41DFFAE4800DE0352 /* KelijobTests */ = {
+			isa = PBXGroup;
+			children = (
+				97D1C8A51DFFAE4800DE0352 /* KelijobTests.swift */,
+				97D1C8A71DFFAE4800DE0352 /* Info.plist */,
+			);
+			path = KelijobTests;
+			sourceTree = "<group>";
+		};
+		97D1C8B21DFFAEAA00DE0352 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9704BB521E03CE090021F36B /* KeliConnection.swift */,
+				97D1C8B51DFFBABC00DE0352 /* ManipulateUserDefaults.swift */,
+				97D1C8B01DFFAE9700DE0352 /* Job.swift */,
+				97D1C8B71DFFDF0C00DE0352 /* User.swift */,
+				97D362761E31EF86004B02AE /* Group.swift */,
+				97D1C8B91DFFE18900DE0352 /* Keli.swift */,
+				975C37F41E08B5E2005F9B35 /* Report.swift */,
+				97FF5FD81E052C5900BD4896 /* RealmManager.swift */,
+				97EDFFF31E0E11B8003592E7 /* LoginManager.swift */,
+				9712CBF41E1CEAE300A8C7C5 /* DomainManager.swift */,
+				9712CBF81E20DE5000A8C7C5 /* ErrorManager.swift */,
+				9712CBFC1E260A0700A8C7C5 /* ConstValue.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		97D29AB91E3C5EB200A948B5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				97D29ABA1E3C5ECA00A948B5 /* Contact@2x.png */,
+				97D29ABC1E3C5ED100A948B5 /* Smartphone_Outgoing@2x.png */,
+				97DD10E01E4446B300075F90 /* 85x85.png */,
+				97D29ABE1E3C5ED900A948B5 /* World_Times@2x.png */,
+				97DD10DC1E4423E000075F90 /* launch_screen.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B9C34D862162B0CF5C620D8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97010B3D1E494D180096788C /* NotificationCenter.framework */,
+				97B77E0B1E02283F00A460ED /* Realm.framework */,
+				97B77E0C1E02283F00A460ED /* RealmSwift.framework */,
+				BEF5B20DCF8B8F2FF8420F79 /* Pods_Kelijob.framework */,
+				4A6BA902D7782E9F2258D978 /* Pods_KelijobTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97D1C88A1DFFAE4800DE0352 /* Kelijob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97D1C8AA1DFFAE4800DE0352 /* Build configuration list for PBXNativeTarget "Kelijob" */;
+			buildPhases = (
+				6386969C5633CD1A7DEBF406 /* [CP] Check Pods Manifest.lock */,
+				97D1C8871DFFAE4800DE0352 /* Sources */,
+				97D1C8881DFFAE4800DE0352 /* Frameworks */,
+				97D1C8891DFFAE4800DE0352 /* Resources */,
+				6AEF6783DDAD954D7C95202C /* [CP] Embed Pods Frameworks */,
+				AA406ED72443100A0CA10CDE /* [CP] Copy Pods Resources */,
+				9743B7E51E43333A002FE541 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kelijob;
+			productName = Kelijob;
+			productReference = 97D1C88B1DFFAE4800DE0352 /* Kelijob.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97D1C8A01DFFAE4800DE0352 /* KelijobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97D1C8AD1DFFAE4800DE0352 /* Build configuration list for PBXNativeTarget "KelijobTests" */;
+			buildPhases = (
+				7265937566450D35A78800A0 /* [CP] Check Pods Manifest.lock */,
+				97D1C89D1DFFAE4800DE0352 /* Sources */,
+				97D1C89E1DFFAE4800DE0352 /* Frameworks */,
+				97D1C89F1DFFAE4800DE0352 /* Resources */,
+				936ECEBF671E6BAE87E0BD0D /* [CP] Embed Pods Frameworks */,
+				02F368788A20B89DD4F571CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97D1C8A31DFFAE4800DE0352 /* PBXTargetDependency */,
+			);
+			name = KelijobTests;
+			productName = KelijobTests;
+			productReference = 97D1C8A11DFFAE4800DE0352 /* KelijobTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97D1C8831DFFAE4800DE0352 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = flatLabel56;
+				TargetAttributes = {
+					97D1C88A1DFFAE4800DE0352 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = HUJYNX2AJQ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					97D1C8A01DFFAE4800DE0352 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 97D1C88A1DFFAE4800DE0352;
+					};
+				};
+			};
+			buildConfigurationList = 97D1C8861DFFAE4800DE0352 /* Build configuration list for PBXProject "Kelijob" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97D1C8821DFFAE4800DE0352;
+			productRefGroup = 97D1C88C1DFFAE4800DE0352 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97D1C88A1DFFAE4800DE0352 /* Kelijob */,
+				97D1C8A01DFFAE4800DE0352 /* KelijobTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97D1C8891DFFAE4800DE0352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9704BB6A1E04DE160021F36B /* TimelineCell.xib in Resources */,
+				97010B461E4BFA6D0096788C /* EULAViewController.xib in Resources */,
+				97EDFFED1E0B7B3A003592E7 /* ReportCell.xib in Resources */,
+				97D29AC31E3F2DD800A948B5 /* remote_alt_domains.plist in Resources */,
+				9712CBF31E1CE9F000A8C7C5 /* local_domains.plist in Resources */,
+				97DD10E11E4446B300075F90 /* 85x85.png in Resources */,
+				97D29ABB1E3C5ECA00A948B5 /* Contact@2x.png in Resources */,
+				97F814931E35E5030024C668 /* local_error_domains.plist in Resources */,
+				97D1C89B1DFFAE4800DE0352 /* LaunchScreen.storyboard in Resources */,
+				97D3626B1E30B6E3004B02AE /* AddCell.xib in Resources */,
+				97D1C8981DFFAE4800DE0352 /* Assets.xcassets in Resources */,
+				97DD10DD1E4423E000075F90 /* launch_screen.png in Resources */,
+				97D29ABF1E3C5ED900A948B5 /* World_Times@2x.png in Resources */,
+				97DD10E51E445B4500075F90 /* ApplyFriendsCell.xib in Resources */,
+				97C5C2AF1E4829D4007E4F3C /* remote_stg_domains.plist in Resources */,
+				97D29ABD1E3C5ED100A948B5 /* Smartphone_Outgoing@2x.png in Resources */,
+				9712CBF71E1FB2C000A8C7C5 /* error_code.plist in Resources */,
+				9743B7E41E43191E002FE541 /* images.xcassets in Resources */,
+				9788DAE11E2DE38100024EED /* ApplyFriendCell.xib in Resources */,
+				97FF5FDD1E054FD300BD4896 /* FriendsGroupCell.xib in Resources */,
+				97D362751E31D719004B02AE /* AddFrGroupCell.xib in Resources */,
+				97D1C8961DFFAE4800DE0352 /* Main.storyboard in Resources */,
+				9789895A1E4C168C009D2C19 /* LoginViewController.xib in Resources */,
+				97DD10DF1E44290A00075F90 /* launch.xcassets in Resources */,
+				97C5C2AE1E4829D4007E4F3C /* remote_release_domains.plist in Resources */,
+				97EDFFF11E0BC86F003592E7 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97D1C89F1DFFAE4800DE0352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02F368788A20B89DD4F571CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KelijobTests/Pods-KelijobTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6386969C5633CD1A7DEBF406 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6AEF6783DDAD954D7C95202C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kelijob/Pods-Kelijob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7265937566450D35A78800A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		936ECEBF671E6BAE87E0BD0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KelijobTests/Pods-KelijobTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9743B7E51E43333A002FE541 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		AA406ED72443100A0CA10CDE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kelijob/Pods-Kelijob-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97D1C8871DFFAE4800DE0352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				978989591E4C168C009D2C19 /* LoginViewController.swift in Sources */,
+				9712CBF51E1CEAE300A8C7C5 /* DomainManager.swift in Sources */,
+				9712CBF91E20DE5000A8C7C5 /* ErrorManager.swift in Sources */,
+				97D1C8BA1DFFE18900DE0352 /* Keli.swift in Sources */,
+				97D362791E3350B7004B02AE /* UIBorderedTextView.swift in Sources */,
+				9788DAE01E2DE38100024EED /* ApplyFriendCell.swift in Sources */,
+				97010B451E4BFA6D0096788C /* EULAViewController.swift in Sources */,
+				975C37F31E07D69D005F9B35 /* SelectFriendsTableViewController.swift in Sources */,
+				97EDFFE71E0A1F9A003592E7 /* CreateReportViewController.swift in Sources */,
+				97FF5FD91E052C5900BD4896 /* RealmManager.swift in Sources */,
+				97F814951E35EB730024C668 /* AlertControllerManager.swift in Sources */,
+				97D362711E31BE4C004B02AE /* CreateGroupViewController.swift in Sources */,
+				97D1C88F1DFFAE4800DE0352 /* AppDelegate.swift in Sources */,
+				978989561E4C0BBB009D2C19 /* AuthTableViewController.swift in Sources */,
+				97D1C8B81DFFDF0C00DE0352 /* User.swift in Sources */,
+				97D3626D1E30CCCE004B02AE /* GroupDefinitionViewController.swift in Sources */,
+				97D1C8B61DFFBABC00DE0352 /* ManipulateUserDefaults.swift in Sources */,
+				97FF5FE31E07C60A00BD4896 /* CreateKeliViewController.swift in Sources */,
+				979D4F3F1E03BC5D004446D1 /* CreateJobViewController.swift in Sources */,
+				975C37F51E08B5E2005F9B35 /* Report.swift in Sources */,
+				97D362741E31D719004B02AE /* AddFrGroupCell.swift in Sources */,
+				97F8148F1E358BFC0024C668 /* ProfileReportViewController.swift in Sources */,
+				97EDFFEF1E0B7C20003592E7 /* ReportTableViewController.swift in Sources */,
+				97FF5FDF1E0619E800BD4896 /* FriendDetailViewController.swift in Sources */,
+				97FF5FDC1E054FD300BD4896 /* FriendsGroupCell.swift in Sources */,
+				97EDFFEC1E0B7B3A003592E7 /* ReportCell.swift in Sources */,
+				97EDFFF41E0E11B8003592E7 /* LoginManager.swift in Sources */,
+				97D1C8B11DFFAE9700DE0352 /* Job.swift in Sources */,
+				97D3626A1E30B6E3004B02AE /* AddCell.swift in Sources */,
+				9712CC031E276FFF00A8C7C5 /* FriendSearchViewController.swift in Sources */,
+				9704BB601E04D8CF0021F36B /* FriendsGroupTableViewController.swift in Sources */,
+				9712CBFD1E260A0700A8C7C5 /* ConstValue.swift in Sources */,
+				97D362771E31EF86004B02AE /* Group.swift in Sources */,
+				972A61021E371B670068D0C4 /* FriendsInGroupTableViewController.swift in Sources */,
+				9704BB691E04DE160021F36B /* TimelineCell.swift in Sources */,
+				97F814911E35BB430024C668 /* CreateProfileReportViewController.swift in Sources */,
+				97DD10E41E445B4500075F90 /* ApplyFriendsCell.swift in Sources */,
+				97EDFFE31E09F7D6003592E7 /* ProfileViewController.swift in Sources */,
+				9704BB5C1E03F4E90021F36B /* TimelineTableViewController.swift in Sources */,
+				9704BB531E03CE090021F36B /* KeliConnection.swift in Sources */,
+				9712CBFB1E24D44300A8C7C5 /* KeliConfirmViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97D1C89D1DFFAE4800DE0352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D1C8A61DFFAE4800DE0352 /* KelijobTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97D1C8A31DFFAE4800DE0352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97D1C88A1DFFAE4800DE0352 /* Kelijob */;
+			targetProxy = 97D1C8A21DFFAE4800DE0352 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97D1C8941DFFAE4800DE0352 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97D1C8951DFFAE4800DE0352 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97D1C8991DFFAE4800DE0352 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97D1C89A1DFFAE4800DE0352 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97D1C8A81DFFAE4800DE0352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Kelijob-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97D1C8A91DFFAE4800DE0352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Kelijob-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97D1C8AB1DFFAE4800DE0352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2378EB51E264064CB18FD86 /* Pods-Kelijob.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Kelijob/Kelijob.entitlements;
+				DEVELOPMENT_TEAM = HUJYNX2AJQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
+				INFOPLIST_FILE = Kelijob/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flatLabel56.Kelijob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		97D1C8AC1DFFAE4800DE0352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D1B6DA8E61435CCF20DDEF /* Pods-Kelijob.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Kelijob/Kelijob.entitlements;
+				DEVELOPMENT_TEAM = HUJYNX2AJQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Realm",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RealmSwift",
+				);
+				INFOPLIST_FILE = Kelijob/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flatLabel56.Kelijob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		97D1C8AE1DFFAE4800DE0352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C782D5F9E3D6E0CBBFB4152D /* Pods-KelijobTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KelijobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flatLabel56.KelijobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kelijob.app/Kelijob";
+			};
+			name = Debug;
+		};
+		97D1C8AF1DFFAE4800DE0352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DFD1198C9CF3506A5D483C3 /* Pods-KelijobTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KelijobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flatLabel56.KelijobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kelijob.app/Kelijob";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97D1C8861DFFAE4800DE0352 /* Build configuration list for PBXProject "Kelijob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97D1C8A81DFFAE4800DE0352 /* Debug */,
+				97D1C8A91DFFAE4800DE0352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97D1C8AA1DFFAE4800DE0352 /* Build configuration list for PBXNativeTarget "Kelijob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97D1C8AB1DFFAE4800DE0352 /* Debug */,
+				97D1C8AC1DFFAE4800DE0352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97D1C8AD1DFFAE4800DE0352 /* Build configuration list for PBXNativeTarget "KelijobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97D1C8AE1DFFAE4800DE0352 /* Debug */,
+				97D1C8AF1DFFAE4800DE0352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97D1C8831DFFAE4800DE0352 /* Project object */;
+}
